@@ -3,7 +3,7 @@ require 'pry'
 
 describe "Dog" do
 
-  let(:teddy) {Dog.new(name: "Teddy", breed: "cockapoo")}
+  let(:teddy) {Dog.new(name: "Teddy", breed:"cockapoo")}
 
   before(:each) do
     DB[:conn].execute("DROP TABLE IF EXISTS dogs")
